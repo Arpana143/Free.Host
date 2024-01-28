@@ -1,0 +1,208 @@
+body {
+  background: url(https://png.pngtree.com/background/20230625/original/pngtree-stock-market-investment-concept-in-3d-render-picture-image_4054465.jpg) center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-size: 14px;
+  overflow: auto;
+}
+
+form {
+  background-color: #C0C0C0;
+  border-radius: 58px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 1px;
+}
+
+input {
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.investment-content {
+  display: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #C0C0C0;
+  color: black;
+  text-align: center;
+}
+
+.banner {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #C0C0C0;
+  color: #000;
+}
+
+.tabContent {
+  display: none;
+}
+
+.profileCard {
+  background-color: #F8F8F8;
+  padding: 20px;
+  margin-top: 100%;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.header {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.amountInput {
+  width: 60%;
+  padding: 5px;
+  margin-top: 15px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.amountInputHead {
+  width: 60%;
+  padding: 8px;
+  box-sizing: border-box;
+  position: relative;
+  top: 55px;
+  right: 105px;
+  height: fit-content;
+  border: none;
+  background-color: transparent;
+  font-size: x-large;
+}
+
+.info {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.label,
+.value {
+  font-weight: bold;
+  color: black;
+}
+
+.value.negative,
+.percentageChange.negative {
+  color: red;
+}
+
+.table-container {
+  display: flex;
+}
+
+.longTermTable,
+.shortTermTable {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.longTermTable table,
+.shortTermTable table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.longTermTable table th,
+.longTermTable table td,
+.shortTermTable table th,
+.shortTermTable table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.arrow {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.arrow.up {
+  color: green;
+}
+
+.arrow.down {
+  color: red;
+}
+
+.portfolio-head {
+  display: flex;
+  flex-direction: row;
+}
+
+.logout-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  padding: 15px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: white;
+  border-radius: 10px;
+}
+
+.logout-button:hover {
+  background-color: #ddd;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 600px), (max-height: 600px) {
+  form {
+    width: 80%; /* Adjust the form width as needed */
+  }
+}

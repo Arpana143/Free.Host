@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="loginPage">
+    <!-- Login Page Content -->
+    <form id="loginForm">
+      <h2>Login Page</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <br>
+      <button type="button" id="loginButton">Login</button>
+    </form>
+  </div>
+
+  <div id="investmentPage" class="investment-content">
+    <!-- Investment Page Content -->
+    <div class="banner">
+      <h1>Portfolio</h1>
+      <div class="logout-button" id="logoutButton">Logout</div>
+    </div>
+    <div class="tabs">
+      <div class="tab" id="longTermTab">Investments</div>
+    </div>
+
+    <div id="longTermContent" class="tabContent">
+      <div class="profileCard">
+        
+        
+        
+        <div class="portfolio-head">
+          <div class="header">
+            <h2>Invested</h2>
+          </div>
+          <input type="text" placeholder="Enter Amount" class="amountInputHead" id="investedAmount" readonly>
+          <div class="header">
+            <h2>Current</h2>
+          </div>
+          <input type="text" placeholder="Enter Amount" class="amountInputHead" id="currentAmount" readonly>
+        </div>
+        <div class="info">
+          <div class="label">Profit and Loss</div>
+          <div id="profitLoss" class="value"><span class="arrow up">&#9650;</span></div>
+          <div class="label">Percentage Change</div>
+          <div id="percentageChange" class="value"><span class="arrow up">&#9650;</span></div>
+        </div>
+        <div class="investmentTables">
+          <div class="table-container">
+            <div class="longTermTable">
+              <h2>Long-Term Investments</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Investment Products</th>
+                    <th>Invested Amount</th>
+                    <th>Current Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>PPF</td>
+                    <td><input type="text" placeholder="Enter Amount" class="amountInput" id="ppfInvested"></td>
+                    <td><input type="text" placeholder="Enter Amount" class="amountInput" id="ppfCurrent"></td>
+                  </tr>
+                  <tr>
+                    <td>EPF</td>
+                    <td><input type="text" placeholder="Enter Amount" class="amountInput" id="epfInvested"></td>
+                    <td><input type="text" placeholder="Enter Amount" class="amountInput" id="epfCurrent"></td>
+                  </tr>
+                  <tr>
+                    <td>NPS</td>
+                    <td><input type="text" placeholder="Enter Amount" class="amountInput" id="npsInvested"></td>
+                    <td><input type="text" placeholder="Enter Amount" class="amountInput" id="npsCurrent"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="shortTermTable">
+            <h2>Short-Term Investments</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Investment Products</th>
+                  <th>Invested Amount</th>
+                  <th>Current Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Stocks</td>
+                  <td><input type="text" placeholder="Enter Amount" class="amountInput" id="stocksInvested"></td>
+                  <td><input type="text" placeholder="Enter Amount" class="amountInput" id="stocksCurrent"></td>
+                </tr>
+                <tr>
+                  <td>Mutual Funds</td>
+                  <td><input type="text" placeholder="Enter Amount" class="amountInput" id="mfInvested"></td>
+                  <td><input type="text" placeholder="Enter Amount" class="amountInput" id="mfCurrent"></td>
+                </tr>
+                <tr>
+                  <td>Fixed Deposit</td>
+                  <td><input type="text" placeholder="Enter Amount" class="amountInput" id="savingsInvested"></td>
+                  <td><input type="text" placeholder="Enter Amount" class="amountInput" id="savingsCurrent"></td>
+                </tr>
+                <tr>
+                  <td>Peer Fixed Deposit</td>
+                  <td><input type="text" placeholder="Enter Amount" class="amountInput" id="peerFDInvested"></td>
+                  <td><input type="text" placeholder="Enter Amount" class="amountInput" id="peerFDCurrent"></td>
+                </tr>
+                <tr>
+                  <td>Savings Account</td>
+                  <td><input type="text" placeholder="Enter Amount" class="amountInput" id="savingsAccountInvested"></td>
+                  <td><input type="text" placeholder="Enter Amount" class="amountInput" id="savingsAccountCurrent"></td>
+                </tr>
+                <tr>
+                  <td>Gold</td>
+                  <td><input type="text" placeholder="Enter Amount" class="amountInput" id="goldInvested"></td>
+                  <td><input type="text" placeholder="Enter Amount" class="amountInput" id="goldCurrent"></td>
+                </tr>
+                <tr>
+                  <td>Govt-ECS</td>
+                  <td><input type="text" placeholder="Enter Amount" class="amountInput" id="govtECSInvested"></td>
+                  <td><input type="text" placeholder="Enter Amount" class="amountInput" id="govtECSCurrent"></td>
+                </tr>
+                <tr>
+                  <td>Rent</td>
+                  <td><input type="text" placeholder="Enter Amount" class="amountInput" id="rentInvested"></td>
+                  <td><input type="text" placeholder="Enter Amount" class="amountInput" id="rentCurrent"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <div id="logoutPage" class="logout-message">
+    <h2>You have been logged out successfully.</h2>
+    <p><a href="#" id="loginAgainLink">Click here to login again</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
